@@ -1,0 +1,28 @@
+<mvc:View controllerName="com.accenture.mom.MOM.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+			<Page title="MOM" id="page" class="class-background">
+				<content>
+						<FlexBox alignItems="Center" justifyContent="Center">
+							<items>
+								<TextArea id="idTextArea" growing="true" class="padding-left" width="15rem" height="20rem"></TextArea>
+							</items>
+						</FlexBox>
+						<FlexBox alignItems="Center" justifyContent="Center">
+							<items>
+								<Button icon="sap-icon://user-settings" width="4rem" press="onSettingPress"/>
+								<Button id="idRecordBtn" icon="sap-icon://microphone" width="4rem" press="onRecordPress"/>
+								<Button icon="sap-icon://save" width="4rem" press="onSubmitPress"/>
+								<Button icon="sap-icon://email" width="4rem" press="emailPress"/>
+							</items>
+						</FlexBox>
+						<FlexBox width="5rem">
+							<Text id="idText"  class="padding-left" width="15rem"></Text>
+						</FlexBox>
+				</content>
+			</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
